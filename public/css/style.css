@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(44, 44, 54);
+}
+
+.center{
+    width: 98vw;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message{
+    color: antiquewhite;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+.timeStamp{
+    position: absolute;
+    bottom: 3px;
+    right: 7px;
+    font-size: xx-small;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.join-title{
+    color: black;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+}
+
+.join-card{
+    background-color: white;
+    padding: 20px;
+    display: inline-block;
+}
+
+.join{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.join button{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(106, 10, 191);
+    border: none;
+    color: white;
+    font-size: 1.25em;
+}
+
+.join button:hover{
+    cursor: pointer;
+}
+
+.join label, .join input{
+    display: block;
+}
+
+.join label{
+    margin-bottom: 10px;
+}
+
+.join input{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.message-display{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(38, 31, 77);
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#message-form{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#message-form input{
+    width: 600px;
+    padding: 7px;
+}
+
+#message-form button{
+    border: none;
+    background-color: aliceblue;
+    padding: 5px;
+    font-weight: bold;
+    color:rgb(38, 31, 77);
+}
+
+#message-form button:hover{
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.list{
+    position: absolute;
+}
+
+.user{
+    color: white;
+    margin-left: 10px;
+}
+
+.listRoom{
+    background-color: rgb(0, 0, 0);
+}
