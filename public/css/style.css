@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: rgb(44, 44, 54);
+    font-family: 'Roboto', sans-serif;
 }
 
 .center{
@@ -14,7 +15,7 @@ body{
 
 .message{
     background-color: rgb(38, 31, 77);
-    color: antiquewhite;
+    color: white;
     font-weight: bold;
     margin: 5px;
     position: relative;
