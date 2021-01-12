@@ -13,7 +13,8 @@ socket.on('message', (content) => {
         timeStamp.classList.add('timeStamp')
 
         let newMessage = document.createElement('div')
-        newMessage.innerHTML = `${content.username}: ${content.text}`
+        let newMessageText = document.createTextNode(`${content.username}: ${content.text}`)
+        newMessage.appendChild(newMessageText)
         newMessage.classList.add('message')
         newMessage.appendChild(timeStamp)
         $messageDisplay.appendChild(newMessage)
