@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-color: rgb(44, 44, 54);
 }
 
@@ -11,17 +13,19 @@ body{
 }
 
 .message{
+    background-color: rgb(38, 31, 77);
     color: antiquewhite;
     font-weight: bold;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin: 5px;
     position: relative;
     overflow-wrap: break-word;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .timeStamp{
     position: absolute;
-    bottom: 3px;
+    bottom: 13px;
     right: 7px;
     font-size: xx-small;
 }
@@ -81,15 +85,17 @@ body{
 .message-display{
     border: 2px solid black;
     border-radius: 5px;
-    background-color: rgb(38, 31, 77);
+    background-color: white;
     height: 80vh;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
 }
 
 .container{
     max-width: 700px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #message-form{
@@ -120,7 +126,8 @@ h1{
 }
 
 .list{
-    position: absolute;
+    float: left;
+    padding: 10px;
 }
 
 .user{
@@ -128,6 +135,22 @@ h1{
     margin-left: 10px;
 }
 
-.listRoom{
-    background-color: rgb(0, 0, 0);
+@media only screen and (max-width: 768px){
+    #message-form input{
+        width: 500px;
+        padding: 7px;
+    }
+
+    .list{
+        display: none;
+    }
+
 }
+
+@media only screen and (max-width: 425px){
+    #message-form input{
+        width: 250px;
+        padding: 7px;
+    }
+}
+

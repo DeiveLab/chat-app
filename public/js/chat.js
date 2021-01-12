@@ -24,7 +24,7 @@ socket.on('message', (content) => {
 socket.on('roomData', ({room, users}) => {
     $usersList.innerHTML = ''
     let listRoom = document.createElement('h1')
-    listRoom.innerHTML = room
+    listRoom.innerHTML = room.toUpperCase()
     listRoom.classList.add('listRoom')
     $usersList.appendChild(listRoom)
 
