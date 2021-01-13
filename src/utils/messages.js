@@ -1,10 +1,10 @@
-const moment = require('moment')
+const moment = require('moment-timezone')
 
 const generateMessage = (username, text) => {
     return {
         text,
         username,
-        createdAt: moment().format('kk:mm')
+        createdAt: moment().tz("America/Sao_Paulo").format('kk:mm')
     }
 }
 
