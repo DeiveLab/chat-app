@@ -12,10 +12,15 @@ socket.on('message', (content) => {
         timeStamp.innerHTML = `${content.createdAt}`
         timeStamp.classList.add('timeStamp')
 
+        let messageSpan = document.createElement('span')
         let newMessage = document.createElement('div')
-        let newMessageText = document.createTextNode(`${content.username}: ${content.text}`)
-        newMessage.appendChild(newMessageText)
+        let newMessageNick = document.createTextNode(`${content.username}: `)
+        let newMessageText = document.createTextNode(`${content.text}`)
+        messageSpan.appendChild(newMessageText)
+        newMessage.appendChild(newMessageNick)
+        newMessage.appendChild(messageSpan)
         newMessage.classList.add('message')
+        messageSpan.classList.add('text-normal')
         newMessage.appendChild(timeStamp)
         $messageDisplay.appendChild(newMessage)
         $messageDisplay.scrollTop = $messageDisplay.scrollHeight;

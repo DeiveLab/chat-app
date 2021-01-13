@@ -5,6 +5,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.text-normal{
+    font-weight: normal;
+}
+
 .center{
     width: 98vw;
     height: 98vh;
@@ -22,6 +26,7 @@ body{
     overflow-wrap: break-word;
     padding: 10px;
     border-radius: 20px;
+    box-shadow: 3px 3px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 .timeStamp{
@@ -85,7 +90,8 @@ body{
 
 .message-display{
     border: 2px solid black;
-    border-radius: 5px;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
     background-color: white;
     height: 80vh;
     overflow: auto;
@@ -99,9 +105,21 @@ body{
     flex-direction: column;
 }
 
+.container-form{
+    border: 2px solid black;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
 #message-form{
     margin-top: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 #message-form input{
@@ -111,10 +129,7 @@ body{
 
 #message-form button{
     border: none;
-    background-color: aliceblue;
-    padding: 5px;
-    font-weight: bold;
-    color:rgb(38, 31, 77);
+    background-color: white;
 }
 
 #message-form button:hover{
@@ -136,10 +151,11 @@ h1{
     margin-left: 10px;
 }
 
+
+
 @media only screen and (max-width: 768px){
     #message-form input{
-        width: 500px;
-        padding: 7px;
+        width: 600px;
     }
 
     .list{
@@ -150,8 +166,18 @@ h1{
 
 @media only screen and (max-width: 425px){
     #message-form input{
-        width: 250px;
-        padding: 7px;
+        width: 325px;
     }
 }
 
+@media only screen and (max-width: 375px){
+    #message-form input{
+        width: 275px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #message-form input{
+        width: 225px;
+    }
+}
